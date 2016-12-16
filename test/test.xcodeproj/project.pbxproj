@@ -28,6 +28,7 @@
 		A9E863381E03BDBC00F5D348 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9E8633F1E03BE5E00F5D348 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClassA.h; path = test/include/ClassA.h; sourceTree = "<group>"; };
 		A9E863411E03BEBC00F5D348 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		A9E863431E03C16300F5D348 /* T_Exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = T_Exception.h; path = test/include/T_Exception.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E8633F1E03BE5E00F5D348 /* ClassA.h */,
+				A9E863431E03C16300F5D348 /* T_Exception.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
