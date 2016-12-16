@@ -6,29 +6,50 @@
 //  Copyright © 2016년 IL YEONG KIM. All rights reserved.
 //
 
-#import <stdio.h>
-#import "./include/ClassA.h"
 
+#import "./include/Cup.h"
+#import "./include/T_Exception.h"
+#import "./include/T_OverfException.h"
+#import <Foundation/NSString.h>
+#import <Foundation/NSException.h>
+#import <Foundation/NSAutoreleasePool.h>
+#import <stdio.h>
 int main(int argc, const char * argv[]) {
-    /*
-    @autoreleasepool {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    Cup *cup = [[Cup alloc] init];
+    int i;
+    
+    // this will work
+    for ( i = 0; i < 4; i++ )
+    {
+        [cup fill];
+        [cup print];
+    }
+    
+    //this will throw 예외처리
+    for( i = 0; i < 7 ; i++)
+    {
+        @try{
+            [cup fill];
+        } @catch (T_Exception *e) {
+            printf( "%s ", [[e name] cString]);
+        } @catch (T_OverfException *e) {
+            printf( "%s ", [[e name] cString]);
+        } @finally {
+            [cup print];
+        }
         
     }
-     */
-    
-    ClassA *c1 = [[ClassA alloc] init];
-    ClassA *c2 = [[ClassA alloc] init];
-    
-    //print count
-    printf( "ClassA count: %i\n", [ClassA initCount]);
-    
-    ClassA *c3 = [[ClassA alloc] init];
 
-    //print count again
-    printf( "ClassA count: %i\n", [ClassA initCount]);
-    
-    [c1 release];
-    [c2 release];
-    [c3 release];
+    //throw a generic exception
+    @try{
+        [cup setLevel: -1];
+    } @catch (NSException *e) {
+        printf("%s : %s\n", [[e name] cString], [[e reason] cString] );
+    }
+
+    //free memory
+    [cup release];
+    [pool release];
     return 0;
 }

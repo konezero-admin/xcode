@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A9E863391E03BDBC00F5D348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E863381E03BDBC00F5D348 /* main.m */; };
 		A9E863421E03BEBC00F5D348 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E863411E03BEBC00F5D348 /* ClassA.m */; };
+		A9E863451E03C20900F5D348 /* T_Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E863441E03C20900F5D348 /* T_Exception.m */; };
+		A9E863481E03C2A200F5D348 /* T_OverfException.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E863471E03C2A200F5D348 /* T_OverfException.m */; };
+		A9E8634B1E03C34E00F5D348 /* Cup.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8634A1E03C34E00F5D348 /* Cup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,11 @@
 		A9E8633F1E03BE5E00F5D348 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClassA.h; path = test/include/ClassA.h; sourceTree = "<group>"; };
 		A9E863411E03BEBC00F5D348 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		A9E863431E03C16300F5D348 /* T_Exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = T_Exception.h; path = test/include/T_Exception.h; sourceTree = "<group>"; };
+		A9E863441E03C20900F5D348 /* T_Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Exception.m; sourceTree = "<group>"; };
+		A9E863461E03C25000F5D348 /* T_OverfException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = T_OverfException.h; path = test/include/T_OverfException.h; sourceTree = "<group>"; };
+		A9E863471E03C2A200F5D348 /* T_OverfException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_OverfException.m; sourceTree = "<group>"; };
+		A9E863491E03C30700F5D348 /* Cup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Cup.h; path = test/include/Cup.h; sourceTree = "<group>"; };
+		A9E8634A1E03C34E00F5D348 /* Cup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,9 @@
 			children = (
 				A9E863381E03BDBC00F5D348 /* main.m */,
 				A9E863411E03BEBC00F5D348 /* ClassA.m */,
+				A9E863441E03C20900F5D348 /* T_Exception.m */,
+				A9E863471E03C2A200F5D348 /* T_OverfException.m */,
+				A9E8634A1E03C34E00F5D348 /* Cup.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -73,6 +84,8 @@
 			children = (
 				A9E8633F1E03BE5E00F5D348 /* ClassA.h */,
 				A9E863431E03C16300F5D348 /* T_Exception.h */,
+				A9E863461E03C25000F5D348 /* T_OverfException.h */,
+				A9E863491E03C30700F5D348 /* Cup.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -135,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E863451E03C20900F5D348 /* T_Exception.m in Sources */,
+				A9E8634B1E03C34E00F5D348 /* Cup.m in Sources */,
+				A9E863481E03C2A200F5D348 /* T_OverfException.m in Sources */,
 				A9E863421E03BEBC00F5D348 /* ClassA.m in Sources */,
 				A9E863391E03BDBC00F5D348 /* main.m in Sources */,
 			);
